@@ -1,0 +1,219 @@
+
+    
+  html{
+    scroll-behavior:smooth;
+  }
+  
+  body  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  nav {
+    height:5rem;
+    width:100vw;
+  background-color:#be3144;
+  position:fixed;
+  z-index:1;
+  
+  }
+  #icon{
+   color:darkorange;
+  position: absolute;
+  left:47vw;
+  }
+   nav > ul > li {
+    display:inline-block;
+    text-decoration:none;
+    align-items: center;
+    float:right;
+    
+    padding-top:10px;
+    padding-right:40px;
+    font-size:1.7rem;
+    color:#f0f0f0;
+    opacity:0.9;
+    margin-right:40px;
+  }
+  ul > li > a{
+    text-decoration:none;
+    color:#f0f0f0;
+    
+  }
+ 
+  ul > li > a:hover  {
+    text-decoration:none;
+    color:#f0f0f0;
+    
+    
+    animation: clicavel-nav 60s ease-in-out;
+  }
+  
+  #profile-link {
+    text-decoration: none;
+  }
+  #welcome-section  {
+    background-image: linear-gradient(45deg, #3a3d40 0%, #181719 100%);
+    margin:0;
+    width:100%;
+    height:100vh;
+    position:scroll;
+    padding-top:1px;
+  }
+ 
+  
+  h1{
+    color:white;
+    text-align:center;
+    font-weight:bolder;
+    opacity:0.9;
+    margin-bottom:-20px;
+    font-size:4rem;
+    padding-top: 5rem;
+    
+    
+  }
+  p {
+    text-align:center;
+    padding:0px;
+    color:rgb(150, 32, 32);
+    font-size:2rem;
+    font-style:italic;
+  }
+  .introdution {
+    margin: 200px auto;
+  }
+  #projects {
+  
+    height:100vh;
+    position:scroll;
+    
+    background-color:rgb(104, 111, 189);
+    padding:1px;
+  }
+  .apresentation{
+    font-size:2.3rem;
+    padding-top:80px;
+    
+    padding-bottom:90px;
+    
+  }
+  .container{
+    width:95vw;
+    margin:0 auto;
+    
+  }
+  .project-tile {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:0 auto;
+  
+  }
+  .project1, .project2, .project3 {
+    width:30vw;
+    height:4rem;
+    background-color:rgb(54, 54, 54);
+    border-radius:5px;
+    text-align:center;
+    padding-top:2rem;
+    color:#f0f0f0;
+    font-weight:bold;
+    font-size:21px;
+  }
+  .normal {
+    font-size:1.5rem;
+    color:#f0f0f0;
+    font-weight:lighter;
+    font-style:italic;
+  }
+  .footer{
+    padding-top:150px;
+  }
+  #dev:hover  {
+    transform: scale(1.1);
+  }
+  #informations {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .coluna1, .coluna2, .coluna3 {
+
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    
+  }
+  .coluna1:hover, .coluna2:hover, .coluna3:hover{
+  animation: 3s clicavel-nav ease-in-out infinite;
+  }
+  #linha  {
+    width: 35rem;
+    margin: 0 auto;
+    margin-top:-80px;
+    margin-bottom: 90px;
+  }
+  #classe {
+    text-decoration: none;
+    color:black;
+  }
+
+  #dev  {
+    width:15vw;
+    height:20vh;
+    margin:0 auto;
+    display:flex;
+    padding-bottom:0px;
+    padding-left:0;
+    
+    
+  }
+ 
+  @keyframes clicavel-nav   {
+    0%{
+        box-shadow: 0 0 1em #303841;
+        
+    }
+    25%{
+        box-shadow: 0 0 1em #303841;
+        
+    }
+    50%{
+        box-shadow: 0 0 1em #303841;
+    }
+    75%{
+        box-shadow: 0 0 1em #303841;
+    }
+    100%{
+        box-shadow: 0 0 1em #303841;
+    }
+  } 
+ 
+ 
+  
+
+  @media(max-width:600px){
+    nav > ul > li  {
+        display:grid;
+        width:15%;
+    }
+    #informations  {
+      padding:0;
+      margin:0;
+    }
+    .coluna1, .coluna2, .coluna3 {
+      padding:10px;
+      text-align: center;
+    }
+    #linha  {
+      width:25rem;
+    }
+    #dev{
+      width:24vw;
+    }
+  }
+   
+  
